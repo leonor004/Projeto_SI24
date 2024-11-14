@@ -9,11 +9,11 @@
     <header>
         <nav  class="menu">
             <a href="inicialPage.html"> Logo</a>
-          <a href="about_us.html#about_us">ABOUT US</a>
+          <a href="#about_us">ABOUT US</a>
           <a href="inicialPage.html#Book"> BOOK YOUR CAR</a>
 
           <a href="login.html">
-          <button type="submit" id="clickSubmit"> Login </button> </a> 
+          <button type="button" id="clickLogin"> Login </button> </a> 
          
         </nav>
     </header>
@@ -30,12 +30,60 @@
 
             </div>
           </section>
-          <section class="about-us">
+          <section class="about_us">
             <h2>Informations</h2>
             <div class="info">
-              <p> ... </p>  
+              <p> enquanto ainda não temos informação  </p>  
             </div>
-     
+          </section>
+
+         <section class="Book_your_car">            //formulario de preferencias para a escolha do carro                   
+          <h2>Book you car</h2>
+          <form>
+                
+          <div class="pickup_date" id="pickup">
+              <label id="pickup" for="pickupdate">Pick up date:</label>
+              <input type="date"  required>
+              </div>
+         <div class="return_date" id="return">
+                <label id="return">Pick up date:</label>
+                <input type="date"  required>
+                </div>
+      <div class="price">
+                      <label for="price">Price:</label>
+                    
+                     <div class="range-input">
+                      <input type="range" 
+                             class="min-range" 
+                             min="0" 
+                             max="10000" 
+                             value="2500" 
+                             step="1">
+                      <input type="range" 
+                             class="max-range" 
+                             min="0" 
+                             max="10000" 
+                             value="8500" 
+                             step="1">
+                  </div>
+
+      <div class="N_seats">
+                      <label for="n_seats">Number of seats:</label>
+                      <input type="number" name="n_seats" id="n_seats" min="1" max="5" required>  //com limite de numero ou options
+                     </div>
+        <div class="Brand">
+                    
+                     <label for="carBrands">Car Brand:</label>
+                    <select id="carbrand" name="cars">
+    <option value="Ferrari">Ferrari</option>
+    <option value="Porche">Porche</option>
+    <option value="Pagani">Pagani</option>
+    <option value="Aston Martin">Aston Martin</option>
+  </select>
+  </div>
+  <button type="submit" id="clickSubmit"> Submit </button> 
+          </form>
+        </section>
     </main>
     </body>
 </html>
