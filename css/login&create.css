@@ -1,16 +1,4 @@
 
-/*body {
-   
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-
 
 /* Estilo geral */
 body {
@@ -22,10 +10,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  /* Estilo do container principal */
-  .main {
+}
+
+/* Estilo do container principal */
+.main {
     background-color: #a2a9b3;
     padding: 40px;
     border-radius: 12px;
@@ -33,28 +21,27 @@ body {
     text-align: center;
     width: 100%;
     max-width: 400px;
-  }
-  
-  /* Estilo para campos do formulário */
-  label {
+}
+
+/* Estilo para campos do formulário */
+label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  input[type="email"], input[type="password"] {
+    color: #44525F; /* Ponto e vírgula adicionado */
+}
+
+input[type="email"], input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
-  }
-  
-  /* Estilo do botão de envio */
-  #clickSubmit{
-    background-color: #44525f;
+}
+
+/* Estilo do botão de envio */
+#clickSubmit {
+    background-color: #44525F;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -62,33 +49,8 @@ body {
     cursor: pointer;
     font-size: 16px;
     width: 100%;
-  }
-  
-  #clickSubmit:hover {
-    background-color: #2e3a44;
-  }
-  
-  /* Estilo para o link "Create Account" */
-  .create_account_log {
-    margin-top: 20px;
-  }
-  
-  .create_account_log h4 {
-    color: #333;
-  }
-  
-  
-  .btn-link {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-size: 16px;
-  }
-  
-  .btn-link:hover {
-    background-color: #0056b3;
-  }
+}
+
+#clickSubmit:hover {
+    background-color: #2e3a44; /* Cor mais escura no hover */
+}
