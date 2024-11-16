@@ -1,5 +1,4 @@
 
-
 /* Estilo geral */
 body {
     font-family: Arial, sans-serif;
@@ -15,32 +14,37 @@ body {
 /* Estilo do container principal */
 .main {
     background-color: #a2a9b3;
-    padding: 40px;
-    border-radius: 12px;
+    padding: 40px 6%;
+ 
+    border-radius:20%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
     max-width: 400px;
+   color: #2e3a44;
 }
 
 /* Estilo para campos do formulário */
 label {
     display: block;
-    margin-bottom: 5px;
-    color: #44525F; /* Ponto e vírgula adicionado */
+  width: 80%;
+    padding: 0% 2% ;
+    margin:0% 5%;
+  text-align: left; 
 }
 
 input[type="email"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+  text-align: left; 
+    width: 80%;
+    padding: 2% ;
+    margin:5%; 
     border: 1px solid #ccc;
-    border-radius: 6px;
+   
     font-size: 16px;
 }
 
 /* Estilo do botão de envio */
-#clickSubmit {
+#clickSubmit, #goToCreate {
     background-color: #44525F;
     color: white;
     border: none;
@@ -48,9 +52,21 @@ input[type="email"], input[type="password"] {
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%;
+    width: 40%;
+  
 }
 
 #clickSubmit:hover {
     background-color: #2e3a44; /* Cor mais escura no hover */
+}
+
+/* Estilo do botão de envio */
+
+
+#goToCreate:hover {
+    background-color: #2e3a44; /* Cor mais escura no hover */
+}
+
+.create_account_log{
+ padding-top: 5%; 
 }
