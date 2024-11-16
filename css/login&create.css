@@ -1,5 +1,6 @@
-body {
-    width:100%; 
+
+/*body {
+   
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     margin: 0;
@@ -10,9 +11,84 @@ body {
     
   }
 
-.main{
-background-color: #A2A9B3;
-margin: 10% 50%;
-padding: 40px; 
-justify-items: center;
-}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilo do container principal */
+  .main {
+    background-color: #a2a9b3;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Estilo para campos do formulário */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Estilo do botão de envio */
+  #clickSubmit{
+    background-color: #44525f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  #clickSubmit:hover {
+    background-color: #2e3a44;
+  }
+  
+  /* Estilo para o link "Create Account" */
+  .create_account_log {
+    margin-top: 20px;
+  }
+  
+  .create_account_log h4 {
+    color: #333;
+  }
+  
+  
+  .btn-link {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .btn-link:hover {
+    background-color: #0056b3;
+  }
