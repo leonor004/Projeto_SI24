@@ -10,14 +10,15 @@ body {
     align-items: center;
     height: 100vh;
 }
-
+h1{
+ text-transform: uppercase; 
+  padding: 2%;
+}
 /* Estilo do container principal */
 .main {
     background-color: #a2a9b3;
     padding: 40px 6%;
- 
     border-radius:20%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
     max-width: 400px;
@@ -33,13 +34,12 @@ label {
   text-align: left; 
 }
 
-input[type="email"], input[type="password"] {
+input [type="email"], input [type="password"], input [type="name"] {
   text-align: left; 
     width: 80%;
     padding: 2% ;
     margin:5%; 
     border: 1px solid #ccc;
-   
     font-size: 16px;
 }
 
@@ -49,21 +49,14 @@ input[type="email"], input[type="password"] {
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 6px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
     width: 40%;
   
 }
 
-#clickSubmit:hover {
-    background-color: #2e3a44; /* Cor mais escura no hover */
-}
-
-/* Estilo do botão de envio */
-
-
-#goToCreate:hover {
+#clickSubmit:hover, #goToCreate:hover  {
     background-color: #2e3a44; /* Cor mais escura no hover */
 }
 
