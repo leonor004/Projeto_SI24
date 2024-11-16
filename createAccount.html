@@ -2,24 +2,26 @@
 <html>
 <head>
   <title>Create Account </title>
-  <link rel="stylesheet" href="css/login&create.css">
+  <link rel="stylesheet" href="CSS/login&create.css">
 </head>
 <body>
-<main>
- 
+<main class="main">
+
 <h1>Create Account </h1>
 <form>
     <div class="name">
-        <label for="name">Name:</label>
+      <div>
+        <label id="Name" for="name">Name:</label>
         <input type="name"  id="name" required>
-       </div>
-     <div class="name">
-        <label for="username">Username:</label>
+      </div>
+      <div>
+        <label id="Username"for="username">Username:</label>
         <input type="name"  id="username" required>
        </div>
+  </div>
 
-    <div class="birth-date" id="inputContentor">
-        <label id="age" for="age">Age:</label>
+    <div class="birth-date" >
+        <label for="age">Birth date:</label>
         <input type="date" name="age" id="age_date" required>
         </div>
 
@@ -32,7 +34,7 @@
                 <input type="password"  required>
                </div>
 
-<button type="submit" id="clickSubmit"> Submit </button> 
+<button type="submit" class= "submit" id="clickSubmit2"> Submit </button> 
 // Guardar n abase de dados de clientes e vai para pagina cliente
 </form>
 
