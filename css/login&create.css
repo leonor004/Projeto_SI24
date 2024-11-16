@@ -1,4 +1,5 @@
 body {
+    width:100%; 
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     margin: 0;
@@ -9,9 +10,9 @@ body {
     
   }
 
-/*.main{
+.main{
 background-color: #A2A9B3;
-margin: 40px 40px;
+margin: 10% 50%;
 padding: 40px; 
 justify-items: center;
-}*/
+}
