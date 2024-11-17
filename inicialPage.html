@@ -46,10 +46,10 @@
           <label for="returndate">Return date:</label>
           <input type="date" id="returndate" required>
         </div>
-        <div class="price">
+        <div id="price">
           <label for="price">Maximum price:</label>
           <div class="range-input">
-            <input type="range" id="price" class="max-range" min="0" max="10000" value="8500" step="100">
+            <input type="range"  class="max-range" min="0" max="10000" value="8500" step="100">
           </div>
         </div>
         <div class="N_seats">
@@ -59,13 +59,13 @@
         <div class="Brand">
           <label for="carbrand">Car Brand:</label>
           <select id="carbrand" name="cars">
-            <option value="Ferrari">Ferrari</option>
+            <option value="car">Ferrari</option>
             <option value="Porche">Porche</option>
             <option value="Pagani">Pagani</option>
             <option value="Aston Martin">Aston Martin</option>
           </select>
         </div>
-        <button type="submit" id="clickSearch">Search</button>
+        <button type="submit" class="submit" id="clickSearch">Search</button>
       </form>
     </section>
   </main>
