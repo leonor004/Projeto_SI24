@@ -13,7 +13,7 @@
     <nav class="menu">
       <a href="inicialPage.html" >Fast & Furious</a>
       <a href="#about_us" class="underline">About Us</a>
-      <a href="inicialPage.html#Book" class="underline">Book Your Car</a>
+      <a href="#Book" class="underline">Book Your Car</a>
       <div class="login-container">
         <a href="login.html" >
           <button type="button" id="clickLogin">Account</button>
@@ -35,7 +35,7 @@
       </div>
     </section>
 
-    <section class="Book_your_car">
+    <section class="Book_your_car" id="Book">
       <h2>Book Your Car</h2>
       <form>
         <div class="pickup_date">
@@ -65,6 +65,12 @@
             <option value="Aston Martin">Aston Martin</option>
           </select>
         </div>
+
+        <div class="Location">
+          <label for="location">Location for pick up:</label>
+          <input type="name" id="location" required>
+        </div>
+
         <button type="submit" class="submit" id="clickSearch">Search</button>
       </form>
     </section>

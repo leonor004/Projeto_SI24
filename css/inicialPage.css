@@ -116,7 +116,7 @@ p{
     font-size: 12px;
 }
 .Book_your_car {
-    background-color:#ccc ;
+    background-color:#A2A9B3;
 padding: 2% 5%;
 display:grid; 
 grid-template-columns: auto auto auto auto auto auto;
@@ -131,7 +131,7 @@ label {
   margin-left: 7%;
   text-align: left; 
 }
-input[type="range"], input[type="number"], input[type="date"], input[type="range"], #carbrand{
+input[type="range"], input[type="number"], input[type="date"], input[type="range"], #carbrand, input[type="name"]{
     text-align: left; 
     width: 80%;
     padding: 2% ;
@@ -156,7 +156,14 @@ input[type="range"], input[type="number"], input[type="date"], input[type="range
     grid-column: 4 / 4;
     grid-row: 1;
 }
-
+.Brand{
+  grid-column: 4/5 ;
+  grid-row: 1;
+}
+.Location{
+  grid-column: 3/5 ;
+  grid-row: 2;
+}
 
 /* Footer */
 footer {
