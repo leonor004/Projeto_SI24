@@ -1,114 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>inicialPage </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicial Page</title>
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/inicialPage.css">
 </head>
 <body>
+  <header>
+    <img src="Imagens/Xiaomi-SU7.jpeg" alt="Header Background">
+    <nav class="menu">
+      <a href="inicialPage.html" >Fast & Furious</a>
+      <a href="#about_us" class="underline">About Us</a>
+      <a href="inicialPage.html#Book" class="underline">Book Your Car</a>
+      <div class="login-container">
+        <a href="login.html" >
+          <button type="button" id="clickLogin">Account</button>
+        </a>
+      </div>
+    </nav>
+    <div class="header-title">
+      <h1>Fast & Furious</h1>
+      <h2>“Life is too short to drive boring cars”</h2>
+      <p>Enjoy the road life</p>
+    </div>
+  </header>
 
-    <header>
-        <nav  class="menu">
-            <a href="inicialPage.html"> Logo</a>
-          <a href="#about_us">ABOUT US</a>
-          <a href="inicialPage.html#Book"> BOOK YOUR CAR</a>
+  <main>
+    <section class="about_us" id="about_us">
+      <h2>About us </h2>
+      <div class="info">
+        <p>Enquanto ainda não temos informação: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+    </section>
 
-          <a href="login.html">
-          <button type="button" id="clickLogin"> Login </button> </a> 
-         
-        </nav>
-    </header>
-    <main>
-        <section class="beginning">
-            <div >
-              <image> </image> 
-            </div>
-      
-            <div class="title-quote">
-              <h1>Fast & Furious</h1>
-              <h2>“Life is to short to drive boring cars ”</h2>
-              <p>Enjoy the road life </p>
-
-            </div>
-          </section>
-          <section class="about_us">
-            <h2>Informations</h2>
-            <div class="info">
-              <p> enquanto ainda não temos informação  </p>  
-            </div>
-          </section>
-
-         <section class="Book_your_car">            //formulario de preferencias para a escolha do carro                   
-          <h2>Book you car</h2>
-          <form>
-                
-          <div class="pickup_date" id="pickup">
-              <label id="pickup" for="pickupdate">Pick up date:</label>
-              <input type="date"  required>
-              </div>
-         <div class="return_date" id="return">
-                <label id="return">Pick up date:</label>
-                <input type="date"  required>
-                </div>
-      <div class="price">
-                      <label for="price">Maximun price:</label>
-                    
-                     <div class="range-input">
-                      
-                      <input type="range" 
-                             class="max-range" 
-                             min="0" 
-                             max="10000" 
-                             value="8500" 
-                             step="100">
-                  </div>
-
-      <div class="N_seats">
-                      <label for="n_seats">Number of seats:</label>
-                      <input type="number" name="n_seats" id="n_seats" min="1" max="5" required>  //com limite de numero ou options
-                     </div>
-        <div class="Brand">
-                    
-                     <label for="carBrands">Car Brand:</label>
-                    <select id="carbrand" name="cars">
-    <option value="Ferrari">Ferrari</option>
-    <option value="Porche">Porche</option>
-    <option value="Pagani">Pagani</option>
-    <option value="Aston Martin">Aston Martin</option>
-  </select>
-  </div>
-  <button type="submit" id="clickSearch"> Search </button> 
-          </form>
-
-          <div class="Quote2">
-<p2> VVVRRROOOOOMMMMM</p2>
+    <section class="Book_your_car">
+      <h2>Book Your Car</h2>
+      <form>
+        <div class="pickup_date">
+          <label for="pickupdate">Pick up date:</label>
+          <input type="date" id="pickupdate" required>
+        </div>
+        <div class="return_date">
+          <label for="returndate">Return date:</label>
+          <input type="date" id="returndate" required>
+        </div>
+        <div class="price">
+          <label for="price">Maximum price:</label>
+          <div class="range-input">
+            <input type="range" id="price" class="max-range" min="0" max="10000" value="8500" step="100">
           </div>
+        </div>
+        <div class="N_seats">
+          <label for="n_seats">Number of seats:</label>
+          <input type="number" name="n_seats" id="n_seats" min="1" max="5" required>
+        </div>
+        <div class="Brand">
+          <label for="carbrand">Car Brand:</label>
+          <select id="carbrand" name="cars">
+            <option value="Ferrari">Ferrari</option>
+            <option value="Porche">Porche</option>
+            <option value="Pagani">Pagani</option>
+            <option value="Aston Martin">Aston Martin</option>
+          </select>
+        </div>
+        <button type="submit" id="clickSearch">Search</button>
+      </form>
+    </section>
+  </main>
 
-       <footer>
-        <seccion>
-          <ul>
-            <img src="Imagens/Porche_icon.jpg" alt="Ferrari" width="50" height="50">
-            <img src="Imagens/Porche_icon.jpg" alt="Porche" width="" height=""> 
-            <img src="Imagens/Porche_icon.jpg" alt="" width="" height="">
-            <img src="" alt="" width="" height=""> 
-          </ul>
-        </seccion>
-        <seccion class="contacts">
-          <h3>Contacts</h3>
-          <ul>
-            <li>+351 239 111 999</li>
-            <li><a href="mailto:">fast&furious@ridemain.com</a></li>
-            <li> Alameda Street, California </li>
-          </ul>
-        </seccion>
-        <seccion class="social_media">
-          <h4>Follow us on social media!</h4>
-          <img src="Imagens/InstagramIcon" alt="instagram" width="50" height="50"> 
-          <img src="Imagens/" alt="youtube" width="50" height="50"> 
-        </seccion>
-        
-       </footer>   
-
-        </section>
-    </main>
-    </body>
+  <footer>
+    <section>
+      <ul>
+        <img src="Imagens/Porche_icon.jpg" alt="Ferrari" width="50" height="50">
+        <img src="Imagens/Porche_icon.jpg" alt="Porche" width="50" height="50">
+      </ul>
+    </section>
+    <section class="contacts">
+      <h3>Contacts</h3>
+      <ul>
+        <li>+351 239 111 999</li>
+        <li><a href="mailto:fast&furious@ridemain.com">fast&furious@ridemain.com</a></li>
+        <li>Alameda Street, California</li>
+      </ul>
+    </section>
+    <section class="social_media">
+      <h4>Follow us on social media!</h4>
+      <img src="Imagens/InstagramIcon.jpg" alt="Instagram" width="50" height="50">
+    </section>
+  </footer>
+</body>
 </html>
