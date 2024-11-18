@@ -46,31 +46,42 @@
           <label for="returndate">Return date:</label>
           <input type="date" id="returndate" required>
         </div>
-        <div id="price">
+         <div class="Location">
+          <label for="location">Location for pick up:</label>
+          <input type="name" id="location" required>
+        </div>
+        
+        <div class="Brand">
+          <label for="carbrand">Car Brand:</label>
+          <select id="carbrand" name="cars">
+            <option value="1">Ferrari</option>
+            <option value="2">Porche</option>
+            <option value="3">Pagani</option>
+            <option value="3">Aston Martin</option>
+          </select>
+        </div>
+        
+        <div class="price">
           <label for="price">Maximum price:</label>
-          <div class="range-input">
-            <input type="range"  class="max-range" min="0" max="10000" value="8500" step="100">
+          <div class="input">
+           <select id="maxP" name="max">
+            <option value="1">20.000$</option>
+            <option value="2">30.000$</option>
+            <option value="3">40.000$</option>
+            <option value="3">50.000$</option>
+              <option value="3">60.000$</option>
+              <option value="3">70.000$</option>
+             <option value="3">80.000$</option>
+             <option value="3">90.000$</option>
+             <option value="3">100.000$</option>
+          </select>
           </div>
         </div>
         <div class="N_seats">
           <label for="n_seats">Number of seats:</label>
           <input type="number" name="n_seats" id="n_seats" min="1" max="5" required>
         </div>
-        <div class="Brand">
-          <label for="carbrand">Car Brand:</label>
-          <select id="carbrand" name="cars">
-            <option value="car">Ferrari</option>
-            <option value="Porche">Porche</option>
-            <option value="Pagani">Pagani</option>
-            <option value="Aston Martin">Aston Martin</option>
-          </select>
-        </div>
-
-        <div class="Location">
-          <label for="location">Location for pick up:</label>
-          <input type="name" id="location" required>
-        </div>
-
+        
         <button type="submit" class="submit" id="clickSearch">Search</button>
       </form>
     </section>
