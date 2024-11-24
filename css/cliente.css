@@ -17,6 +17,15 @@
  }
  /*guardar info da reserva na base de dados, historico do carro e do cliente*/
  .caixa_carro{
+  
+    width:100%; 
 padding: 2%;
+margin: 0 2%; 
 background-color: #A2A9B3;
+img{
+    
+    width:90%; 
+     
+}
  }
+ 
