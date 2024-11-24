@@ -72,7 +72,9 @@ input[type="email"], input[type="password"], input[type="date"] {
     border: 1px solid #ccc;
     font-size: 16px;
 }
-
+#loginForm{
+  display:block; 
+}
 
 #clickSubmit, #goToCreate {
     background-color: #44525F;

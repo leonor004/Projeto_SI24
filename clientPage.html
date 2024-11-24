@@ -3,95 +3,100 @@
 <head>
   <title>ClientPage </title>
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/cliente.css">
 </head>
 <body>
-
-    <header>
-        <nav  class="menu">
-            <a href="clientPage.html"> Logo</a>
-          <a href="#about_us">ABOUT US</a>
-          <a href="inicialPage.html#Book"> BOOK YOUR CAR</a>
-
-         <div class="profile">
-            <a href=".html">
-            <img src="Imagens/Porche_icon.jpg" alt="profileIcon" width="20" height="20"> </a>
-            <p>User Name</p>                                           //acessar à base de dados 
-            <div class="profileItems">
-<ul>
-    <li> <a href="balance.html"> Balance</a></li>               // hover/click sobre o icon profile
-    <li> <a href="ckeckoutC.html"> Checkout</a></li>
-    <li> <a href="inicialPage.html"> Log Out</a></li>
-</ul>
-            </div>
-         </div> 
-         
-         </nav>
-    </header>
-    <main>
-        <section class="beginning">
-            <div >
-              <image> </image> 
-            </div>
+  <header>
+  <img src="Imagens/Xiaomi-SU7.jpeg" alt="Header Background">
+    <nav class="menu">
+      <a href="inicialPage.html" >Fast & Furious</a>
+      <a href="#about_us" class="underline">About Us</a>
+      <a href="#Book" class="underline">Book Your Car</a>
       
-            <div class="title-quote">                // Base de dados com o nome do user (cliente)
-              <h1>Hello ClientName!</h1>
-              <h2>“Life is to short to drive boring cars ”</h2>
-              <p>Enjoy the road life </p>
-
-            </div>
-          </section>
-          
-
-         <section class="Book_your_car">            //formulario de preferencias para a escolha do carro                   
-          <h2>Book you car</h2>
-          <form>
-                
-          <div class="pickup_date" id="pickup">
-              <label id="pickup" for="pickupdate">Pick up date:</label>
-              <input type="date"  required>
-              </div>
-         <div class="return_date" id="return">
-                <label id="return">Pick up date:</label>
-                <input type="date"  required>
-                </div>
-      <div class="price">
-                      <label for="price">Maximun price:</label>
-                    
-                     <div class="range-input">
-                      
-                      <input type="range" 
-                             class="max-range" 
-                             min="0" 
-                             max="10000" 
-                             value="8500" 
-                             step="100">
-                  </div>
-
-      <div class="N_seats">
-                      <label for="n_seats">Number of seats:</label>
-                      <input type="number" name="n_seats" id="n_seats" min="1" max="5" required>  //com limite de numero ou options
-                     </div>
-        <div class="Brand">
-                    
-                     <label for="carBrands">Car Brand:</label>
-                    <select id="carbrand" name="cars">
-    <option value="Ferrari">Ferrari</option>
-    <option value="Porche">Porche</option>
-    <option value="Pagani">Pagani</option>
-    <option value="Aston Martin">Aston Martin</option>
-  </select>
-  </div>
-  <button type="submit" id="clickSearch"> New research </button> 
-          </form>
-
-          <div class="Quote2">
-<p2> VVVRRROOOOOMMMMM</p2>
+      <div class="login-container" id="profile">
+        
+        <img src="Imagens/profile icon.png" alt="profileIcon" > 
+        <p>User Name</p>                                          
+        <div class="profileItems">
+<ul>
+<li> <a href="balance.html"> Balance</a></li>               
+<li> <a href="ckeckoutC.html"> Checkout</a></li>
+<li> <a href="inicialPage.html"> Log Out</a></li>
+</ul>
+        </div>
+     </div>
+    </nav>
+   
+    
+      <div class="header-title">                
+        <h1>Hello ClientName!</h1>
+        <h2>“Life is to short to drive boring cars ”</h2>
+        <p>Enjoy the road life </p>
+      </div>
+   
+  </header>
+       
+    <main>
+        
+      <section class="Book_your_car" id="Book2">
+        <h2>Book Your Car</h2>
+        <form>
+          <div class="pickup_date">
+            <label for="pickupdate">Pick up date:</label>
+            <input type="date" id="pickupdate" required>
           </div>
-
+          <div class="return_date">
+            <label for="returndate">Return date:</label>
+            <input type="date" id="returndate" required>
+          </div>
+           <div class="Location">
+            <label for="location">Location for pick up:</label>
+            <input type="name" id="location" required>
+          </div>
+          
+          <div class="Brand">
+            <label for="carbrand">Car Brand:</label>
+            <select id="carbrand" name="cars">
+              <option value="1">Ferrari</option>
+              <option value="2">Porche</option>
+              <option value="3">Pagani</option>
+              <option value="3">Aston Martin</option>
+            </select>
+          </div>
+          
+          <div class="price">
+            <label for="price">Maximum price:</label>
+            <div class="input">
+             <select id="maxP" name="max">
+              <option value="1">20.000$</option>
+              <option value="2">30.000$</option>
+              <option value="3">40.000$</option>
+              <option value="3">50.000$</option>
+                <option value="3">60.000$</option>
+                <option value="3">70.000$</option>
+               <option value="3">80.000$</option>
+               <option value="3">90.000$</option>
+               <option value="3">100.000$</option>
+            </select>
+            </div>
+          </div>
+          <div class="N_seats">
+            <label for="n_seats">Number of seats:</label>
+            <input type="number" name="n_seats" id="n_seats" min="1" max="5" required>
+          </div>
+          
+          <button type="submit" class="submit" id="clickSearch">Search</button>
+        </form>
+        </section>
+          <div class="Quote2">
+<h2> VVVRRROOOOOMMMMM</h2>
+          </div>
+         <section class="results">
+          <h2>Search results</h2>
+        
          <div class="search_results">
-            <h2>Search results</h2>      //recolher os resultados encontrados na base de dados que correspondem ao forms inicial(se foi feito)
-
-            <div> 
+                 
+            <div class="caixa_carro"> 
                 <img src="Imagens/Porche_icon.jpg">
                 <p4>Car Model</p4>
                 <p6> Car brand</p6>
@@ -102,13 +107,42 @@
                     <p> XXXX</p>
                     <p6> Price</p6>
                 </div>
-                <button type="submit" id="Book_It"> Book It</button>   
+                <button type="submit" class="submit" id="Book_It"> Book It</button>   
 
-                 //guardar info da reserva na base de dados, historico do carro e do cliente
+                 
             </div>
 
-         </div> 
+            <div class="caixa_carro"> 
+              <img src="Imagens/Porche_icon.jpg">
+              <p4>Car Model</p4>
+              <p6> Car brand</p6>
+              <div class="car_info">
+                  <p>Registration year</p>
+                  <p> XXXX</p>
+                  <p>Number of seats</p>
+                  <p> XXXX</p>
+                  <p6> Price</p6>
+              </div>
+              <button type="submit"  class="submit"id="Book_It"> Book It</button>   
+          </div>
 
+          <div class="caixa_carro"> 
+            <img src="Imagens/Porche_icon.jpg">
+            <p4>Car Model</p4>
+            <p6> Car brand</p6>
+            <div class="car_info">
+                <p>Registration year</p>
+                <p> XXXX</p>
+                <p>Number of seats</p>
+                <p> XXXX</p>
+                <p6> Price</p6>
+            </div>
+            <button type="submit"  class="submit"id="Book_It"> Book It</button>   
+
+             //guardar info da reserva na base de dados, historico do carro e do cliente
+        </div>
+         </div> 
+        </secction>
 
           <section class="about_us">
             <h2>Informations</h2>
