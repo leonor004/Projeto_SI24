@@ -3,15 +3,15 @@
 <head>
   <title>ClientPage</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="exp/cliente copy.css">
+  <link rel="stylesheet" href="css/cliente copy.css">
 </head>
 <body>
   <header>
     <img src="Imagens/Xiaomi-SU7.jpeg" alt="Header Background">
     <nav class="menu">
-      <a href="inicialPage.html">Fast & Furious</a>
-      <a href="#about_us" class="underline">About Us</a>
-      <a href="#Book" class="underline">Book Your Car</a>
+      <a href="clientPage copy.html">Fast & Furious</a>
+      <a href="inicialPage copy.html .about_us" class="underline">About Us</a>
+      <a href="inicialPage copy.html #about2" class="underline">Book Your Car</a>
 
     </nav>
     
@@ -33,7 +33,140 @@
       <p>Enjoy the road life</p>
     </div>
   </header>
+  <main>
+        
+    <section class="Book_your_car" id="Book2">
+      <h2>Book Your Car</h2>
+      <form>
+        <div class="pickup_date">
+          <label for="pickupdate">Pick up date:</label>
+          <input type="date" id="pickupdate" required>
+        </div>
+        <div class="return_date">
+          <label for="returndate">Return date:</label>
+          <input type="date" id="returndate" required>
+        </div>
+         <div class="Location">
+          <label for="location">Location for pick up:</label>
+          <input type="name" id="location" required>
+        </div>
+        
+        <div class="Brand">
+          <label for="carbrand">Car Brand:</label>
+          <select id="carbrand" name="cars">
+            <option value="1">Ferrari</option>
+            <option value="2">Porche</option>
+            <option value="3">Pagani</option>
+            <option value="3">Aston Martin</option>
+          </select>
+        </div>
+        
+        <div class="price">
+          <label for="price">Maximum price:</label>
+          <div class="input">
+           <select id="maxP" name="max">
+            <option value="1">20.000$</option>
+            <option value="2">30.000$</option>
+            <option value="3">40.000$</option>
+            <option value="3">50.000$</option>
+              <option value="3">60.000$</option>
+              <option value="3">70.000$</option>
+             <option value="3">80.000$</option>
+             <option value="3">90.000$</option>
+             <option value="3">100.000$</option>
+          </select>
+          </div>
+        </div>
+        <div class="N_seats">
+          <label for="n_seats">Number of seats:</label>
+          <input type="number" name="n_seats" id="n_seats" min="1" max="5" required>
+        </div>
+        
+        <button type="submit" class="submit" id="clickSearch">Search</button>
+      </form>
+      </section>
+        <div class="Quote2">
+<h2> VVVRRROOOOOMMMMM</h2>
+        </div>
+       <section class="results">
+        <h2>Search results</h2>
+      
+       <div class="search_results">
+               
+          <div class="caixa_carro"> 
+              <img src="Imagens/car models/Panamera car.png">
+              <h4>Car Model</h4>
+              <h6> Car brand</h6>
+              <div class="car_info">
+                  <p>Registration year</p>
+                  <p> XXXX</p>
+                  <p>Number of seats</p>
+                  <p> XXXX</p>
+                  <h4> Price</h4>
+              </div>
+              <button type="submit" class="submit" id="Book_It"> Book It</button>   
 
+               
+          </div>
+
+          <div class="caixa_carro"> 
+            <img src="Imagens/car models/FERRARI car.png">
+            <h4>Car Model</h4>
+            <h6> Car brand</h6>
+            <div class="car_info">
+                <p>Registration year</p>
+                <p> XXXX</p>
+                <p>Number of seats</p>
+                <p> XXXX</p>
+                <h4> Price</h4>
+            </div>
+            <button type="submit"  class="submit"id="Book_It"> Book It</button>   
+        </div>
+
+        <div class="caixa_carro"> 
+          <img src="Imagens/car models/Xiaomi car.png">
+          <h4>Car Model</h4>
+          <h6> Car brand</h6>
+          <div class="car_info">
+              <p>Registration year</p>
+              <p> XXXX</p>
+              <p>Number of seats</p>
+              <p> XXXX</p>
+              <h4> Price</h4>
+          </div>
+          <button type="submit"  class="submit"id="Book_It"> Book It</button>   
+
+           
+      </div>
+       </div> 
+      </secction>
+
+        <section class="about_us" id="about2">
+          <h2>Informations</h2>
+            <p> enquanto ainda não temos informação, fica textinho   </p>  
+          
+        </section>
+     <footer>
+      <seccion>
+        <ul><li>brand1 </li>
+          <img src="" alt="Ferrari" width="25" height="25">
+          <li><img src="Imagens/Porche_icon.jpg" alt="Porche" width="" height=""> </li>
+          <li><img src="" alt="" width="" height=""> </li>
+          <li><img src="" alt="" width="" height=""> </li>
+        </ul>
+      </seccion>
+      <seccion class="contacts">
+        <h3>Contacts</h3>
+        <ul>
+          <li>+351 239 111 999</li>
+          <li><a href="mailto:">fast&furious@ridemain.com</a></li>
+          <li> Alameda Street, California </li>
+        </ul>
+      </seccion>
+     </footer>   
+
+      </section>
+  </main>
   <script src="exp/profileMenu.js"></script>
 </body>
 </html>

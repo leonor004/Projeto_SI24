@@ -23,7 +23,7 @@ body {
    width: 100%;
    display: flex;
    justify-content: flex-start;
-   /*padding: 0.5em 1em;*/
+
  }
  
  a, h2 {
@@ -33,10 +33,10 @@ body {
  .menu a {
    color: white;
    text-decoration: none;
-   /*margin: 0 1em;*/
+   margin: 0 1em;
    font-size: 12px;
-    /*position: relative;
-  transition: color 0.3s ease;*/
+   position: relative;
+   transition: color 0.3s ease;
  }
  
  .menu a:first-child {
@@ -61,37 +61,40 @@ body {
  
  /* Login container */
  .login-container {
-   
    position:sticky;
  }
  
- #profile img {
-   width: 30px;
-   height: auto;
-   cursor: pointer;
-   margin-right: 1%;
- }
-/* Login container */
+ /* Login container */
 #profile {
   position: absolute; /* Alinha o elemento de forma absoluta em relação ao header */
   top: 3%; /* Ajusta a altura para ficar alinhado com o menu */
-  right: 1%; /* Mantém distância do canto direito */
+  right: 2%; /* Mantém distância do canto direito */
   display: flex; /* Para alinhar os itens internamente */
   align-items: center; /* Alinha o ícone e o texto verticalmente */
   color: white; /* Mantém o texto visível sobre a imagem */
   z-index: 5; /* Garante que esteja acima de outros elementos */
+}
 
- }
+#profile img {
+  width: 30px; /* Mantém o ícone pequeno */
+  height: auto;
+  cursor: pointer;
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+#profile img:hover{
+ image-resolution: 1;
+}
+
  .profileItems {
   display: none;
   position: absolute;
-  top: 40px; /* Posiciona o menu suspenso abaixo do ícone */
+  top: 45px; /* Posiciona o menu suspenso abaixo do ícone */
   right: 0;
+border-right: 1px solid white;
 
-  border-right: 1px solid white;
   z-index: 10;
   font-size: 12px;
-  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*/
+
 }
 
 .profileItems ul {
@@ -101,7 +104,7 @@ body {
  
 .profileItems li {
   padding: 10px;
-  text-align: right;
+  text-align: center;
 }
 
 .profileItems li a {
@@ -132,3 +135,25 @@ body {
    font-style: italic;
    width: 100%;
  }
+
+ /* Search Carros */
+
+ 
+.search_results{
+ display:flex;
+ justify-content: space-evenly;
+ align-content: flex-start;
+}
+/*guardar info da reserva na base de dados, historico do carro e do cliente*/
+.caixa_carro{
+
+ width:100%; 
+padding: 2%;
+margin: 0 2%; 
+background-color: #A2A9B3;
+img{
+ 
+ width:90%; 
+  
+}
+}
