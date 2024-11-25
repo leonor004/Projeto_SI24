@@ -62,7 +62,6 @@ body {
  /* Login container */
  .login-container {
    
-   margin-right: 5%;
    position:sticky;
  }
  
@@ -70,40 +69,48 @@ body {
    width: 30px;
    height: auto;
    cursor: pointer;
+   margin-right: 1%;
  }
- #profile{
-  position:absolute; 
-  color: white;
+/* Login container */
+#profile {
+  position: absolute; /* Alinha o elemento de forma absoluta em relação ao header */
+  top: 3%; /* Ajusta a altura para ficar alinhado com o menu */
+  right: 1%; /* Mantém distância do canto direito */
+  display: flex; /* Para alinhar os itens internamente */
+  align-items: center; /* Alinha o ícone e o texto verticalmente */
+  color: white; /* Mantém o texto visível sobre a imagem */
+  z-index: 5; /* Garante que esteja acima de outros elementos */
+
  }
  .profileItems {
-   display: none;
-   position: absolute;
-   top: 50px;
-   right: 0;
-    
-   z-index: 10;
-   font-size: 12px;
-    
- }
+  display: none;
+  position: absolute;
+  top: 40px; /* Posiciona o menu suspenso abaixo do ícone */
+  right: 0;
+
+  border-right: 1px solid white;
+  z-index: 10;
+  font-size: 12px;
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);*/
+}
+
+.profileItems ul {
+  list-style: none;
+  
+}
  
- .profileItems ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
- }
- 
- .profileItems li {
-   padding: 10px;
- }
- 
- .profileItems li a {
-   text-decoration: none;
-   border-right:white;
-   color: black;
- }
+.profileItems li {
+  padding: 10px;
+  text-align: right;
+}
+
+.profileItems li a {
+  text-decoration: none;
+  color: white;
+}
  
  .profileItems li:hover {
-   background-color: #f4f4f9;
+   background-color: #44525F;
  }
  
  /* Header Title */
