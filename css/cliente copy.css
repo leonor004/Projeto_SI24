@@ -1,208 +1,213 @@
 body {
-   font-family: Arial, sans-serif;
-   background-color: #f4f4f9;
-   margin: 0;
-   padding: 0;
- }
- 
- /* Header */
- header {
-   position: relative;
-   text-align: center;
- }
- 
- header img {
-   width: 100%;
-   height: auto;
- }
- 
- .menu {
-   position: absolute;
-   top: 3%;
-   left: 0;
-   width: 100%;
-   display: flex;
-   justify-content: flex-start;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
 
- }
- 
- a, h2 {
-   text-transform: uppercase;
- }
- 
- .menu a {
-   color: white;
-   text-decoration: none;
-   margin: 0 1em;
-   font-size: 12px;
-   position: relative;
-   transition: color 0.3s ease;
- }
- 
- .menu a:first-child {
-   font-size: 16px;
-   margin-right: 5%;
- }
- 
- /* Underline effect */
- .underline:hover {
-   color: white;
- }
- 
- .underline:hover::after {
-   content: '';
-   position: absolute;
-   left: 0;
-   bottom: 0; /* Ajustado para ficar mais próximo da palavra */
-   width: 100%;
-   height: 2px;
-   background-color: white;
- }
- 
- /* Login container */
- .login-container {
-   position:sticky;
- }
- 
- /* Login container */
+/* Header */
+header {
+  position: relative;
+  text-align: center;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+a, h2 {
+  text-transform: uppercase;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+  font-size: 12px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu a:first-child {
+  font-size: 16px;
+  margin-right: 5%;
+}
+
+/* Underline effect */
+.underline:hover {
+  color: white;
+}
+
+.underline:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Ajustado para ficar mais próximo da palavra */
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+/* Login container */
+.login-container {
+  position:sticky;
+}
+
+/* Login container */
 #profile {
-  position: absolute; /* Alinha o elemento de forma absoluta em relação ao header */
-  top: 3%; /* Ajusta a altura para ficar alinhado com o menu */
-  right: 2%; /* Mantém distância do canto direito */
-  display: flex; /* Para alinhar os itens internamente */
-  align-items: center; /* Alinha o ícone e o texto verticalmente */
-  color: white; /* Mantém o texto visível sobre a imagem */
-  z-index: 5; /* Garante que esteja acima de outros elementos */
+ position: absolute; /* Alinha o elemento de forma absoluta em relação ao header */
+ top: 3%; /* Ajusta a altura para ficar alinhado com o menu */
+ right: 2%; /* Mantém distância do canto direito */
+ display: flex; /* Para alinhar os itens internamente */
+ align-items: center; /* Alinha o ícone e o texto verticalmente */
+ color: white; /* Mantém o texto visível sobre a imagem */
+ z-index: 5; /* Garante que esteja acima de outros elementos */
 }
 
 #profile img {
-  width: 30px; /* Mantém o ícone pequeno */
-  height: auto;
-  cursor: pointer;
-  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+ width: 30px; /* Mantém o ícone pequeno */
+ height: auto;
+ cursor: pointer;
+ margin-right: 8px; /* Espaçamento entre o ícone e o texto */
 }
 #profile img:hover{
- image-resolution: 1;
+image-resolution: 1;
 }
 
- .profileItems {
-  display: none;
-  position: absolute;
-  top: 45px; /* Posiciona o menu suspenso abaixo do ícone */
-  right: 0;
+.profileItems {
+ display: none;
+ position: absolute;
+ top: 45px; /* Posiciona o menu suspenso abaixo do ícone */
+ right: 0;
 border-right: 1px solid white;
 
-  z-index: 10;
-  font-size: 12px;
+ z-index: 10;
+ font-size: 12px;
 
 }
 
 .profileItems ul {
-  list-style: none;
-  
-}
+ list-style: none;
  
+}
+
 .profileItems li {
-  padding: 10px;
-  text-align: center;
+ padding: 10px;
+ text-align: center;
 }
 
 .profileItems li a {
-  text-decoration: none;
+ text-decoration: none;
+ color: white;
+}
+
+.profileItems li:hover {
+  background-color: #44525F;
+}
+
+/* Header Title */
+.header-title {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  text-align: left;
   color: white;
 }
- 
- .profileItems li:hover {
-   background-color: #44525F;
- }
- 
- /* Header Title */
- .header-title {
-   position: absolute;
-   top: 20%;
-   left: 5%;
-   text-align: left;
-   color: white;
- }
- 
- .header-title h1 {
-   font-size: 3em;
-   margin: 0;
- }
- 
- .header-title h2 {
-   font-size: 1.5em;
-   font-style: italic;
-   width: 100%;
- }
 
- /* Search Carros */
+.header-title h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.header-title h2 {
+  font-size: 1.5em;
+  font-style: italic;
+  width: 100%;
+}
+
+/* Search Carros */
 
 .search_results {
-  display: grid; /* Usa CSS Grid para organizar as caixas */
-  grid-template-columns: repeat(3, 1fr); /* Divide em 3 colunas iguais */
-  gap: 20px; /* Espaçamento entre as colunas */
-  /*padding: 20px;*/
+ display: grid; /* Usa CSS Grid para organizar as caixas */
+ grid-template-columns: repeat(3, 1fr); /* Divide em 3 colunas iguais */
+ gap: 20px; /* Espaçamento entre as colunas */
+ /*padding: 20px;*/
 }
 /*guardar info da reserva na base de dados, historico do carro e do cliente*/
 .caixa_carro {
-  background-color: #A2A9B3;
-  display: grid;
-  grid-template-areas:
-    "img img img"
-    "title title title"
-    "brand brand brand"
-    "info info info"
-    "button button button";
-  grid-gap: 10px; /* Espaçamento entre os itens */
-  padding: 20px;
-  border-radius: 8px; /* Estética */
-  /*text-align: center; /* Centraliza texto */
+ background-color: #A2A9B3;
+ display: grid;
+ grid-template-areas:
+   "img img img"
+   "title title title"
+   "brand brand brand"
+   "info info info"
+   "price price price"
+   "button button button";
+ grid-gap: 10px; /* Espaçamento entre os itens */
+ padding: 20px;
+ border-radius: 8px; /* Estética */
+ /*text-align: center; /* Centraliza texto */
 }
 
 .caixa_carro img {
-  width: 100%;
-  max-width: 300px;
-  justify-self: center; /* Centraliza a imagem */
-  grid-area: img;
+ width: 100%;
+ max-width: 300px;
+ justify-self: center; /* Centraliza a imagem */
+ grid-area: img;
 }
-.caixa_carro h4 {
-  grid-area: title;
+.caixa_carro h4 :first-child{
+ grid-area: title;
+ margin:0;
+}
+.caixa_carro h4 :last-child{
+  grid-area: price;
   margin:0;
-}
+ }
+
 
 .caixa_carro h6 {
-  grid-area: brand;
-  margin:0;
+ grid-area: brand;
+ margin:0;
 }
 
 .caixa_carro .car_info {
-  grid-area: info;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+ grid-area: info;
+ display: flex;
+ align-items: center;
+}
+.car_info {
+ flex-direction: row;
 }
 
 .caixa_carro .car_info p {
-  margin: 5px 0;
+ margin: 5px 0;
 }
 
 .caixa_carro #Book_It {
-  grid-area: button;
-  padding: 10px 20px;
-  background-color: #44525F;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 14px;
-  transition: background-color 0.3s;
+ grid-area: button;
+ padding: 10px 20px;
+ background-color: #44525F;
+ color: white;
+ border: none;
+ cursor: pointer;
+ border-radius: 5px;
+ font-size: 14px;
+ transition: background-color 0.3s;
 }
 
 .caixa_carro #Book_It:hover {
-  background-color: #333D47;
-}
-
-.car_info div{
-  display: inline-block; 
+  background-color: #A2A9B3;
 }
