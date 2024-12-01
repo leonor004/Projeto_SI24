@@ -131,16 +131,16 @@ form{
   label {
       display: block;
    width:80%;
-     padding: 0% 2%;    
+     padding: 0 2%;
       margin-top: 5%; 
     margin-left: 7%;
     text-align: left; 
   }
-  input[type="number"], input[type="name"], input[type="date"], .Brand select, .price select {
+  input[type="number"], input[type="name"], input[type="date"],input[type="text"], .Brand select, .price select {
       text-align: left; 
       width: 80%;
       padding: 2% ;
-      margin:5% 0%;                
+      margin:5% 0;
       border: 1px solid #ccc;
       font-size: 16px;
   }
